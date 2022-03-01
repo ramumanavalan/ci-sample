@@ -8,6 +8,8 @@ jobs:
     container: reactnativecommunity/react-native-android
     steps:
     - uses: actions/checkout@v2
+    - name: NodeVersion
+      run: node --version
     - name: Envinfo
       run: npx envinfo
     - name: Build application
